@@ -4,9 +4,9 @@ Created by [Andre de Vries](https://www.twitter.com/andre347_) (11th June 2018)
 
 #### **The Tableau Extension API is still in Development and therefore will contain bugs and should only be deployed when it has been released. This is solely for testing purposes. Please report any bugs straight to Tableau**
 
-Tableau Extension that allows you to create a add data to your Microsfot SQL Server from within a Tableau Dashboard. Once you've added your data, you can refresh the data source and you can continue your analysis. All without having to leave Tableau.
+Tableau Extension that allows you to add data to your Microsfot SQL Server from within a Tableau Dashboard. Once you've added your data, you can refresh the data source and you can continue your analysis. All without having to leave Tableau.
 
-This version of the extension **should be hosted locally**. I will release a hosted version later, which means you don't have to run a server on your localhost.
+This version of the extension **should be hosted locally**. I will release a hosted version later, which means you don't have to run a server on your localhost and you only have to download the .trex file. I will update the repo once I've done that.
 
 ## Extension Installation Instructions
 
