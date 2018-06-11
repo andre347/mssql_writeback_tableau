@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="#">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="tableau-extensions-0.12.8.min.js"></script>
+
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif !important;
+            font-size: 1.5rem;
+            background-color: rgb(248, 249, 250)
+        }
+
+        .form-check-label {
+            font-size: 1.1rem;
+            position: absolute;
+        }
+
+        #btn {
+            background-color: rgb(215, 142, 78);
+            border-radius: 0;
+            border: 2px solid rgb(215, 142, 78);
+            color: white;
+        }
+
+        #btn:hover {
+            background-color: rgb(194, 142, 78);
+            border: 2px solid rgb(194, 142, 78);
+        }
+
+        #form {
+            padding: 10px;
+        }
+
+        #correct {
+            display: none;
+        }
+
+        #error {
+            display: none;
+        }
+
+        #success {
+            display: none;
+        }
+
+        #card {
+            margin-top: 18px;
+        }
+
+        a:link {
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card rounded-0" id="card">
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="writeData" href="/writeData">Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <div class="alert alert-success" id="success">
+                                Server settings saved! Add data
+                                <a href="/writeData" class="alert-link">here</a>.
+                            </div>
+
+                            <form id="form">
+                                <div class="form-group">
+                                    <label>Server</label>
+                                    <input type="text" class="form-control" id="server" placeholder="Enter Server" name="server" required>
+                                    <div class="invalid-feedback">
+                                        Server must be specified
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Database</label>
+                                    <input type="text" class="form-control" id="database" name='database' placeholder="Enter database" required>
+                                    <div class="invalid-feedback">
+                                        Enter a valid database
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Table</label>
+                                    <input type="text" class="form-control" id="table" name='table' placeholder="Enter table" required>
+                                    <div class="invalid-feedback">
+                                        Enter a valid table
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Username</label>
+                                            <input type="text" class="form-control" id="user" name='user' placeholder="Enter Username" required>
+                                            <div class="invalid-feedback">
+                                                Enter a valid username
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <div class="input-group">
+                                                <input type="password" class="form-control" id="password" name='password' placeholder="Enter Password" required>
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroupPrepend">
+                                                        <i class="far fa-question-circle" style="font-size: 22px; opacity: 0.7" data-container="body" data-toggle="popover" data-trigger="hover"
+                                                            data-placement="top" data-content="By submitting this login form your credentials (including your password) will be added to the workbook settings."></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+                                    <!-- placeholder for getting data source from extension -->
+                                    <!-- <input type="checkbox" class="form-check-input" id="checkDS">
+                                    <label class="form-check-label" for="checkDS">Use dashboard data source</label> -->
+
+                                    <button type="button" class="btn btn-primary btn float-right" id="btn">Sign In</button>
+                                </div>
+
+
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh "
+            crossorigin="anonymous "></script>
+        <script src="js/bootstrap.min.js "></script>
+        <script src="credentials.js "></script>
+
+</body>
+
+</html>

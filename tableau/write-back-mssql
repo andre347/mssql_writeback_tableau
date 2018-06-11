@@ -1,0 +1,25 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<manifest manifest-version="0.1" 
+    xmlns="http://wwww.tableau.com/xml/extension_manifest">
+    <dashboard-extension id="com.theinformationlab.extensions.writebackSQL" extension-version="1.0.0">
+        <default-locale>en_US</default-locale>
+        <name resource-id="name"></name>
+        <description>Write Back to Local-File</description>
+        <author name="Andre de Vries" email="andre.devries@theinformationlab.co.uk" organization="The Information Lab" website="https://www.theinformationlab.co.uk"></author>
+        <min-api-version>1.1</min-api-version>
+        <source-location>
+            <url>http://localhost:3000/extension</url>
+        </source-location>
+        <icon></icon>
+        <context-menu>
+            <configure-context-menu-item />
+        </context-menu>
+    </dashboard-extension>
+    <resources>
+        <resource id="name">
+            <text locale="en_US">Write_Back_SQL</text>
+            <text locale="fr_BE">Write_Back_SQL</text>
+            <text locale="de_DE">Write_Back_SQL</text>
+        </resource>
+    </resources>
+</manifest>

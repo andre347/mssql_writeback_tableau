@@ -1,0 +1,22 @@
+{
+  "name": "write_back_mssql",
+  "version": "1.0.0",
+  "description": "tableau extension",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": ["tableau"],
+  "author": "Andre de Vries",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "express-validator": "^5.1.2",
+    "mssql": "^4.1.0",
+    "tedious": "2.2.4",
+    "nodemon": "^1.17.3",
+    "request": "^2.85.0"
+  }
+}

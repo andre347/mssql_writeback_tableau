@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="#">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif !important;
+            font-size: 1.5rem;
+            background-color: rgb(248, 249, 250)
+        }
+
+        #card {
+            margin-top: 18px;
+        }
+
+        a:link {
+            color: grey;
+        }
+
+        img {
+            width: 250px;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card rounded-0" id="card">
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/writeData">Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <img class="img-fluid rounded mb-3" src="img/logo.png" alt="infolab">
+                            <p>This
+                                <strong>Write Back to Microsoft SQL Server (v1.0)</strong> extension was created to allow you to
+                                add data to your SQL Server from within Tableau. This allows you to continue your analysis
+                                without having to leave Tableau.</p>
+                            <p>Created by
+                                <a href="https://www.twitter.com/andre347_" target="_blank">Andre de Vries</a>
+                            </p>
+                            <p>How to use:</p>
+                            <ol>
+                                <small>
+                                    <li>Click the login tab to login to your Microsoft SQL Server</li>
+                                    <li>Go to the data tab to enter the values for the selected columns. You can select a column
+                                        by checking the corresponding box.</li>
+                                    <li>Click the Apply button to write your data back to your database. After your submitted
+                                        your data you can click 'refresh' to refresh your data source.</li>
+                                </small>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
