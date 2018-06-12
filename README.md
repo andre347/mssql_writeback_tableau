@@ -11,7 +11,7 @@ This version of the extension **should be hosted locally**. I will release a hos
 ## Extension Installation Instructions
 
 1.  Download or clone the whole repo, including the **write-back-mssql.trex** file (located in the tableau folder)
-2.  cd into the main folder ('write_back_mssql') and start a server 'node app.js'
+2.  cd into the main folder ('write_back_mssql'), install the dependencies 'npm install' and start a server 'node app.js'
 3.  This will open a server on port 3000
 4.  Open Tableau (currently only beta 2018.2 can read the trex manifest file) and add an extension object in the dashboard. Select the .trex file.
 5.  Submit any bugs/requests by Twitter/Email/Github
